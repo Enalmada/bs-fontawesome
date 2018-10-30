@@ -1,0 +1,41 @@
+{
+  "name": "bs-fontawesome",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for FontAwesome",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enalmada/bs-fontawesome"
+  },
+  "scripts": {
+    "build": "bsb -clean-world -make-world",
+    "clean": "bsb -clean-world",
+    "test": "exit 0",
+    "preversion": "yarn run clean",
+    "changelog": "auto-changelog --template keepachangelog"
+  },
+  "main": "src/FontAwesomeIcon.bs.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "@fortawesome/fontawesome-svg-core": ">=1.0.0",
+    "bs-platform": "^4.0.5",
+    "reason-react": ">=0.5.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.6",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "reason-react": ">=0.5.3"
+  },
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "keywords": [
+    "react",
+    "fontawesome",
+    "reason",
+    "reasonml",
+    "ocaml",
+    "bucklescript"
+  ]
+}
