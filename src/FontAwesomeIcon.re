@@ -14,7 +14,7 @@
 
 [@bs.obj]
 external makeProps:
-  (~icon: array(string), ~id: string=?, ~className: string=?, ~style: ReactDOMRe.Style.t=?, unit) => _ =
+  (~icon: array(string), ~id: string=?, ~className: string=?, ~spin: bool=?, ~style: ReactDOMRe.Style.t=?, unit) => _ =
   "";
 
 let make = (~icon, ~id=?, ~className=?, ~style=?, children) =>
